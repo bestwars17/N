@@ -3,11 +3,6 @@ local LocalPlayer = Players.LocalPlayer
 local TeleportService = game:GetService("TeleportService")
 local HttpService = game:GetService("HttpService")
  
--- Excluded display names
-local excludedNames = {
-    ["U3RT_SOVIETxKILLA"] = false,
-    ["U3RT_KILLAxSOVIET"] = false,
-}
  
 -- Server hop function to find 18 or 19-player servers
 local placeId = game.PlaceId
@@ -179,4 +174,5 @@ task.spawn(function()
             root.CFrame = root.CFrame * CFrame.Angles(0, math.rad(15), 0)
         end
     end
+
 end)
